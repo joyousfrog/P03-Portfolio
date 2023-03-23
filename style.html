@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stephen Kerschbaumer - Style Guide</title>
+
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+  <body>
+
+    <div id="content">
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <h1>P03 - Portfolio Style Guide</h1>
+
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+
+
+        <section class="element">
+          <h3>In-text link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>p>a</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt;Lorem ipsum dolor sit amet, &lt;a href=&quot;https://www.google.ca/&quot;&gt;consectetur adipiscing elit.&lt;/a&gt; Nullam auctor turpis lacus, nec elementum turpis pretium sit amet. &lt;a href=&quot;https://www.google.ca/&quot;&gt;Vivamus viverra urna massa&lt;/a&gt;, sit amet tristique risus scelerisque eu. Vivamus ut commodo ante. Ut tempus urna ac aliquam rutrum. Suspendisse a pretium quam. Sed id risus dapibus, &lt;a href=&quot;https://www.google.ca/&quot;&gt;iaculis felis facilisis&lt;/a&gt;, molestie tellus. Mauris scelerisque tellus vulputate massa venenatis molestie. Pellentesque cursus laoreet elementum. &lt;a href=&quot;https://www.google.ca/&quot;&gt;Curabitur vitae viverra odio&lt;/a&gt;, ut porta nibh. Curabitur maximus nisl a bibendum bibendum. Sed vulputate ac neque at facilisis. Cras feugiat luctus dapibus. Suspendisse tincidunt efficitur metus &lt;a href=&quot;https://www.google.ca/&quot;&gt;vitae venenatis&lt;/a&gt;.&lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>Lorem ipsum dolor sit amet, <a href="https://www.google.ca/">consectetur adipiscing elit.</a> Nullam auctor turpis lacus, nec elementum turpis pretium sit amet. <a href="https://www.google.ca/">Vivamus viverra urna massa</a>, sit amet tristique risus scelerisque eu. Vivamus ut commodo ante. Ut tempus urna ac aliquam rutrum. Suspendisse a pretium quam. Sed id risus dapibus, <a href="https://www.google.ca/">iaculis felis facilisis</a>, molestie tellus. Mauris scelerisque tellus vulputate massa venenatis molestie. Pellentesque cursus laoreet elementum. <a href="https://www.google.ca/">Curabitur vitae viverra odio</a>, ut porta nibh. Curabitur maximus nisl a bibendum bibendum. Sed vulputate ac neque at facilisis. Cras feugiat luctus dapibus. Suspendisse tincidunt efficitur metus <a href="https://www.google.ca/">vitae venenatis</a>.</p>
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="element">
+
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Default Button&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-nav" href="#">Default Button</a>
+
+        </section>
+
+        <section class="element">
+          <h3>Image as a Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.imagelink</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;figure class=&quot;imagelink constrain-width&quot;&gt;<br>
+            &lt;a href=&quot;https://www.google.ca/&quot;&gt;<br>
+            &lt;div class=&quot;zoomimage&quot;&gt;<br>
+            &lt;img src=&quot;images/placeholder.jpg&quot; alt=&quot;Placeholder Image.&quot;&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/a&gt;<br>
+            &lt;/figure&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <figure class="imagelink constrain-width">
+            <a href="https://www.google.ca/">
+              <div class="zoomimage">
+                <img src="images/placeholder.jpg" alt="Placeholder Image.">
+              </div>
+            </a>
+          </figure>
+        </section>
+
+
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+        
+        <section class="element">
+          <h3>Headings</h3>
+
+          <h4>CSS selector:</h4>
+          <p>h1</p>
+          <p>h2</p>
+          <p>h3</p>
+          <p>h4</p>
+          <p>h5</p>
+          <p>h6</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;h1&gt;Heading #1&lt;/h1&gt;<br>
+          &lt;h2&gt;Heading #2&lt;/h2&gt;<br>
+          &lt;h3&gt;Heading #3&lt;/h3&gt;<br>
+          &lt;h4&gt;Heading #4&lt;/h4&gt;<br>
+          &lt;h5&gt;Heading #5&lt;/h5&gt;<br>
+          &lt;h6&gt;Heading #6&lt;/h6&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          
+          <h1>Heading #1</h1>
+          <h2>Heading #2</h2>
+          <h3>Heading #3</h3>
+          <h4>Heading #4</h4>
+          <h5>Heading #5</h5>
+          <h6>Heading #6</h6>
+        </section>
+
+        <section class="element">
+          <h3>Paragraphs</h3>
+
+          <h4>CSS selector:</h4>
+          <p>p</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et suscipit erat. Maecenas ultricies, orci id placerat ornare, dui odio aliquet orci, nec tempor nisl risus at nunc. Mauris id interdum lorem, id dignissim sapien. Aliquam bibendum risus ac massa tincidunt dignissim. Donec at lectus scelerisque, euismod leo a, ultricies arcu. Pellentesque congue tincidunt metus sed sagittis. Nullam at tellus luctus, consectetur odio congue, bibendum felis. Pellentesque ornare ipsum faucibus, maximus dolor in, laoreet augue. Fusce in tristique enim. Curabitur iaculis, enim vitae dapibus ultricies, elit velit ullamcorper metus, quis varius augue arcu a ante. Donec non scelerisque tellus, eu convallis massa. Ut lacus leo, suscipit sed turpis id, hendrerit faucibus lorem. Sed elementum varius pretium. Maecenas id tincidunt metus.&lt;/p&gt;<br>
+            &lt;p&gt;Morbi lacus nulla, euismod id porta eget, porttitor at tortor. Suspendisse accumsan diam pretium augue ullamcorper, vitae mattis ante rutrum. Pellentesque ultricies urna nunc, a aliquet lacus accumsan ultricies. Sed non est quis dui mattis sagittis ut et ex. Curabitur feugiat faucibus odio vitae finibus. Suspendisse in iaculis orci. Suspendisse dignissim leo sed nulla imperdiet, nec elementum neque commodo. Vestibulum sed commodo dolor. Pellentesque in dignissim metus. Curabitur ultricies accumsan dolor, et tincidunt lectus. Maecenas nec pellentesque dolor, a elementum urna. Integer condimentum leo tincidunt massa varius, nec sollicitudin est ultrices.&lt;/p&gt;<br> 
+            &lt;p&gt;Nam pretium scelerisque gravida. In hac habitasse platea dictumst. Aenean ut ullamcorper risus, at dignissim lorem. In pellentesque pellentesque finibus. In vitae maximus leo. Donec sed accumsan leo, vel semper sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Nam maximus lacus velit, sit amet egestas justo laoreet at. Fusce fringilla bibendum leo, quis pellentesque libero egestas nec.&lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et suscipit erat. Maecenas ultricies, orci id placerat ornare, dui odio aliquet orci, nec tempor nisl risus at nunc. Mauris id interdum lorem, id dignissim sapien. Aliquam bibendum risus ac massa tincidunt dignissim. Donec at lectus scelerisque, euismod leo a, ultricies arcu. Pellentesque congue tincidunt metus sed sagittis. Nullam at tellus luctus, consectetur odio congue, bibendum felis. Pellentesque ornare ipsum faucibus, maximus dolor in, laoreet augue. Fusce in tristique enim. Curabitur iaculis, enim vitae dapibus ultricies, elit velit ullamcorper metus, quis varius augue arcu a ante. Donec non scelerisque tellus, eu convallis massa. Ut lacus leo, suscipit sed turpis id, hendrerit faucibus lorem. Sed elementum varius pretium. Maecenas id tincidunt metus.</p>
+
+          <p>Morbi lacus nulla, euismod id porta eget, porttitor at tortor. Suspendisse accumsan diam pretium augue ullamcorper, vitae mattis ante rutrum. Pellentesque ultricies urna nunc, a aliquet lacus accumsan ultricies. Sed non est quis dui mattis sagittis ut et ex. Curabitur feugiat faucibus odio vitae finibus. Suspendisse in iaculis orci. Suspendisse dignissim leo sed nulla imperdiet, nec elementum neque commodo. Vestibulum sed commodo dolor. Pellentesque in dignissim metus. Curabitur ultricies accumsan dolor, et tincidunt lectus. Maecenas nec pellentesque dolor, a elementum urna. Integer condimentum leo tincidunt massa varius, nec sollicitudin est ultrices.</p>
+            
+          <p>Nam pretium scelerisque gravida. In hac habitasse platea dictumst. Aenean ut ullamcorper risus, at dignissim lorem. In pellentesque pellentesque finibus. In vitae maximus leo. Donec sed accumsan leo, vel semper sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Nam maximus lacus velit, sit amet egestas justo laoreet at. Fusce fringilla bibendum leo, quis pellentesque libero egestas nec.</p>
+        </section>
+
+        <section class="element">
+          <h3>Numbered Lists</h3>
+
+          <h4>CSS selector:</h4>
+          <p>ol</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;ol&gt;<br>
+            &lt;li&gt;The first entry in a list.&lt;/li&gt;<br>
+            &lt;li&gt;A second entry in this list.&lt;/li&gt;<br>
+            &lt;li&gt;Third element of the list.&lt;/li&gt;<br>
+          &lt;/ol&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          
+          <ol>
+            <li>The first entry in a list.</li>
+            <li>A second entry in this list.</li>
+            <li>Third element of the list.</li>
+          </ol>
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
+        <p>xxxxxxxxxxxx</p>
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+      <section id="branding">
+        <h2>Branding</h2>
+
+        <section class="element">
+          <h1>Palette:</h1>
+          <div class="palette constrain-width">
+            <div class="palettecolour1">#242423 - BACKGROUND</div>
+            <div class="palettecolour2">#6BAA75 - ACCENT</div>
+            <div class="palettecolour3">#4e925a - ACCENT:HIGHLIGHT</div>
+            <div class="palettecolour4">#FDFFFC - CONTENT</div>
+          </div>
+          <h1>Fonts:</h1>
+          <p class="majormono"><a href="https://fonts.google.com/specimen/Major+Mono+Display?query=major+mono&category=Serif,Display,Handwriting,Monospace">Major Mono Display</a> by Emre Parlak</p>
+          <p>Major Mono Display is for titles and key elements. It has a unique, attention grabbing look that compliments my intended aethetic.</p>
+          <p class="roboto"><a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono</a> by Christian Robertson</p>
+          <p>Roboto Mono is for the body text. It is a clearly legible serifed font, which makes reading chunks of text easier to follow. It's monospace style makes it visually appropriate for someone who works with computers.</p>
+        </section>
+      </section>
+      <section id="citations">
+        <h2>Citations</h2>
+        <p>xxxxxxxxxxxxxxxx</p>
+      </section>
+    </div>
+  </body>
+</html>

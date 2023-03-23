@@ -1,0 +1,133 @@
+/* REFERENCES:
+- CSS :has Selector : https://css-tricks.com/the-css-has-selector/
+
+*/
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono&display=swap');
+/*font-family: 'Major Mono Display', monospace;*/
+/*font-family: 'Roboto Mono', monospace;*/
+
+:root{
+    --background: #242423;
+    --background_gradient: #282830;
+    --content:  #FDFFFC;
+    --accent: #6BAA75;
+    --accent_highlight: #4e925a;
+}
+
+body{
+    background-color: var(--background);
+    background: linear-gradient(0deg, var(--background_gradient) 0%, var(--background) 100%);
+    background-attachment: fixed;
+    color: var(--content);
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    color: var(--accent);
+    transition-property: color; 
+    transition-duration: 0.2s;
+}
+  
+a:hover, a:focus{
+    color: var(--accent_highlight);
+}
+
+h1, h2, h3{
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+}
+
+.constrain-width{
+    max-width: 50rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*NAV*/
+
+.button-nav {
+    display: inline-block;
+    padding: 0.5rem;
+    color: var(--background);
+    background-color: var(--accent);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    margin: 0.5rem;
+  }
+  
+  .button-nav:hover, .button-nav:focus {
+    background-color: var(--accent_highlight);
+    color: var(--background);
+  }
+
+/* HOME PAGE NAV */
+.home_nav{
+    font-size: 2rem;
+    font-family: 'Major Mono Display', monospace;
+    margin: 0rem;
+    text-transform: lowercase;
+    width: 50%;
+}
+
+.home_nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.word{
+    margin: 0px;
+    border: 1px white;
+    transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.word a{
+    color: var(--accent);
+}
+
+.word_highlight:hover{
+    transform: scale(1.1);
+}
+
+/*REFERENCE - Using the :has tag to make other words transparent https://css-tricks.com/the-css-has-selector/ */
+.home_nav:has(.word_highlight:hover) .word:not(.word_highlight:hover){
+    opacity: 0.1;
+}
+
+/*STYLE GUIDE custom stylings for illustrating elements*/
+#content{
+    margin: 5rem 10rem;
+}
+
+.palette > *{
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: var(--background);
+}
+
+.palettecolour1{
+    background-color: var(--background);
+    border: 1px var(--content) dashed;
+}
+  
+.palettecolour2{
+    background-color: var(--accent);
+}
+
+.palettecolour3{
+    background-color: var(--accent_highlight);
+}
+
+.palettecolour4{
+    background-color: var(--content);
+    color: var(--background);
+}
