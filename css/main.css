@@ -16,12 +16,19 @@
     --accent_highlight: #4e925a;
 }
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body{
     background-color: var(--background);
     background: linear-gradient(0deg, var(--background_gradient) 0%, var(--background) 100%);
     background-attachment: fixed;
     color: var(--content);
     font-family: 'Roboto Mono', monospace;
+    padding: 0px;
 }
 
 a{
@@ -60,18 +67,24 @@ img{
     margin: 0.5rem;
   }
   
-  .button-nav:hover, .button-nav:focus {
+.button-nav:hover, .button-nav:focus {
     background-color: var(--accent_highlight);
     color: var(--background);
-  }
+}
+
+.main_nav{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.2rem;
+}
 
 /* HOME PAGE NAV */
 .home_nav{
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: 'Major Mono Display', monospace;
     margin: 0rem;
     text-transform: lowercase;
-    width: 50%;
+    width: 100%;
 }
 
 .home_nav a{
@@ -98,10 +111,27 @@ img{
     transform: scale(1.1);
 }
 
-/*REFERENCE - Using the :has tag to make other words transparent https://css-tricks.com/the-css-has-selector/ */
+/*Reference - Using the :has tag to make other words transparent https://css-tricks.com/the-css-has-selector/ */
 .home_nav:has(.word_highlight:hover) .word:not(.word_highlight:hover){
     opacity: 0.1;
 }
+
+/*CARDS - for browse display*/
+.card{
+    border: 1px var(--content) dashed;
+    padding: 0.4rem;
+    flex-direction: row;
+    margin: 0.7rem 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.card > img{
+    width: 30%;
+    object-fit: cover;
+    padding-right: 0.4rem;
+}
+
 
 /*STYLE GUIDE custom stylings for illustrating elements*/
 #content{
@@ -130,4 +160,46 @@ img{
 .palettecolour4{
     background-color: var(--content);
     color: var(--background);
+}
+
+
+
+
+/*GRIDS*/
+/*Home*/
+.home_grid{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 7fr 3fr;
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 1rem;
+}
+
+.home_gallery  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Project*/
+.project_grid{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.project_info{
+    width: 70%;
+    margin: auto;
+}
+
+/*Browse*/
+.browse_grid{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.browse_cards{
+    width: 70%;
+    margin: auto;
 }
