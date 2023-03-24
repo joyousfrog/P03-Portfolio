@@ -75,12 +75,22 @@ img{
 .main_nav{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    position: fixed;
+    margin-left: 0.3rem;
+    margin-top: 0.7rem;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+}
+
+.main_nav  a{
+    text-decoration-thickness: 2rem;
 }
 
 /* HOME PAGE NAV */
 .home_nav{
     font-size: 4rem;
+    line-height: 3.4rem;
     font-family: 'Major Mono Display', monospace;
     margin: 0rem;
     text-transform: lowercase;
@@ -126,10 +136,14 @@ img{
     align-items: stretch;
 }
 
-.card > img{
-    width: 30%;
+.card img{
+    width: 40%;
     object-fit: cover;
     padding-right: 0.4rem;
+}
+
+.card > .card_text{
+    width: 60%;
 }
 
 
@@ -205,6 +219,17 @@ img{
 }
 
 .browse_cards{
+    width: 70%;
+    margin: auto;
+}
+
+/*Style Guide*/
+.style_grid{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.style_info{
     width: 70%;
     margin: auto;
 }
