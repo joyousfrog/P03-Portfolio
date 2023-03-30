@@ -23,7 +23,29 @@
 
       </div>
 
-      <div class="home_gallery"><a href="template_project.html"><img src="images/placeholder.jpg" alt="Placeholder Image."></a></div>
+      <div class="home_gallery">
+        <div class="slideshow">
+          <!--Slide #1-->
+          <div class="slide">
+            <img src="images/placeholder.jpg" alt="Placeholder Image.">
+          </div>
+          <!--Slide #2-->
+          <div class="slide">
+            <img src="images/placeholder2.jpg" alt="Placeholder Image.">
+          </div>
+          <!--Slide #3-->
+          <div class="slide">
+            <img src="images/placeholder3.jpg" alt="Placeholder Image.">
+          </div>
+          <a class="prev_arrow" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next_arrow" onclick="plusSlides(1)">&#10095;</a>
+          <div class="dots">
+            <a class="dot" onclick="currentSlide(1)"></a>
+            <a class="dot" onclick="currentSlide(2)"></a>
+            <a class="dot" onclick="currentSlide(3)"></a>
+          </div>
+        </div>
+      </div>
 
       <nav class="home_nav">
         <div class="line">
@@ -38,14 +60,29 @@
       </nav>
 
       <div class="home_description">
-      <h2>Fields Enjoyer DX</h2>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper diam leo, vitae viverra ipsum efficitur aliquam. Quisque nec rutrum lacus, nec efficitur nulla. Integer pharetra vitae risus eu placerat. In hac habitasse platea dictumst. Proin vehicula maximus maximus. Nullam eget blandit mauris. Maecenas at consectetur elit, facilisis lacinia ex. Ut efficitur, orci quis sodales suscipit, dolor ipsum commodo ligula, sed aliquam tortor sapien sit amet risus. Curabitur nec diam vel magna dignissim rutrum. Donec ut commodo ante, at commodo quam.
-      </div>
+        <!--Caption #1-->
+        <div class="slide_caption">
+          <h2>Borbo's Quest</h2>
+          <h3 class="roles">Game Designer | Programmer | Artist | Director</h3>
+          A cute and charming puzzle/adventure game built for the original GameBoy handheld console. The game was liscened to the online games platform CoolMath Games, where it has recieved much acclaim.
+        </div>
+        <!--Caption #2-->
+        <div class="slide_caption">
+          <h2>Harmony: Ocean Conductor VR</h2>
+            <h3 class="roles">Lead Designer | Lead Programmer</h3>
+            An immersive VR experience created using <em>Unity</em>, in which players explore a magical underwater environment where they have the ability to compose music by directing sealife using a magical wand.
+        </div>
+        <!--Caption #3-->
+        <div class="slide_caption">
+          <h2>Coffee Space</h2>
+            <h3 class="roles">Lead Game Designer | Character Designer and Modeler| Animator | Programmer</h3>
+            A dynamic and detailed environment built using <em>Unity</em>, with all of the assets being custom made and animated in <em>Maya</em>.
+          </div>
     </div>
-
   </div>
 
   <footer>
 
   </footer>
+  <script src="js/slideshow.js"></script>
 </body>
