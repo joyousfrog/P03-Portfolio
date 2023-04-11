@@ -4,7 +4,6 @@
 let slideIndex = 1;
 var timeoutHolder;
 showSlides(slideIndex);
-autoSlide(slideIndex);
 
 
 // Next/previous controls

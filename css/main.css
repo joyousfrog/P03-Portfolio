@@ -55,6 +55,22 @@ img{
     max-width: 100%;
 }
 
+/*BUTTON*/
+.button {
+    display: inline-block;
+    padding: 0.5rem;
+    color: var(--background);
+    background-color: var(--accent);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+}
+  
+.button:hover, .button:focus {
+    background-color: var(--accent_highlight);
+    color: var(--background);
+}
+
 /*SCROLLBAR*/
 ::-webkit-scrollbar {
     width: 0.5rem;
@@ -86,7 +102,7 @@ img{
     transition-property: background-color; 
     transition-duration: 0.5s;
     margin: 0.5rem;
-  }
+}
   
 .button-nav:hover, .button-nav:focus {
     background-color: var(--accent_highlight);
@@ -118,6 +134,18 @@ img{
     width: 100%;
 }
 
+@media (max-width: 1880px){
+    .home_nav{
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 1800px){
+    .home_nav{
+        font-size: 3.6rem;
+    }
+}
+
 .home_nav a{
     text-decoration: none;
     color: inherit;
@@ -138,7 +166,7 @@ img{
     color: var(--accent);
 }
 
-.word_highlight:hover{
+.word_highlight:hover, .word_highlight:focus{
     transform: scale(1.1);
 }
 
@@ -159,10 +187,6 @@ footer{
     padding: 1rem;
     text-align: center;
     margin-top: auto;
-}
-
-#project_content, #browse_content{
-    
 }
 
 /*GALLERY*/
@@ -266,6 +290,20 @@ footer{
     width: 60%;
 }
 
+/*ZOOM-IN IMAGES*/
+
+.zoomimage{
+    overflow: hidden;
+}
+
+.zoomimage > img{
+    transition: transform 0.4s;
+}
+
+.zoomimage:hover > img, .zoomimage:focus > img{
+    transform: scale(1.2);
+}
+
 
 /*STYLE GUIDE custom stylings for illustrating elements*/
 #content{
@@ -303,7 +341,7 @@ footer{
 /*Home*/
 .home_grid{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 5fr;
     grid-template-rows: 70% 25%;
     height: 100vh;
     height: 100svh;
