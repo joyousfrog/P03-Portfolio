@@ -147,6 +147,24 @@ img{
     opacity: 0.1;
 }
 
+/*FOOTER + FOOTER NAV*/
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: var(--background);
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+#project_content, #browse_content{
+    
+}
+
 /*GALLERY*/
 /* SLIDESHOW TUTORIAL: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 /* ADAPTED CODE FROM P02 */
@@ -209,7 +227,7 @@ img{
     padding: 0.5rem;
     margin-top: -22px;
     color: var(--content);
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: 0.2s;
     user-select: none;
     background-color: rgba(0,0,0,0.3);
