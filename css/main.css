@@ -55,6 +55,26 @@ img{
     max-width: 100%;
 }
 
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--background_accent); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent_highlight) 
+  }
+
 /*NAV*/
 
 .button-nav {
@@ -219,6 +239,11 @@ img{
     padding-right: 0.4rem;
 }
 
+.card h2{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 .card > .card_text{
     width: 60%;
 }
@@ -283,7 +308,31 @@ img{
 
 .home_description{
     padding: 0.4rem;
-    overflow: hidden;
+    overflow-x: Hidden;
+    overflow-y: scroll;
+}
+
+@media (max-width: 1200px){
+    .home_grid{
+        max-width: 600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+    }
+
+    .home_grid>*:nth-child(2){
+        order: 1;
+    }
+
+    .home_grid>*:nth-child(4){
+        order: 2;
+    }
+
+    .home_gallery{
+        height: 50vh;
+    }
 }
 
 /*Project*/
@@ -306,6 +355,32 @@ img{
 .browse_cards{
     width: 70%;
     margin: auto;
+}
+
+@media (max-width: 693px){
+    .browse_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .browse_cards{
+        width: 90%;
+    }
+
+    .main_nav{
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+        font-size: 2rem;
+        position: sticky;
+        margin: 1rem auto;
+        text-align: center;
+        font-family: 'Major Mono Display', monospace;
+        text-transform: lowercase;
+    }
+
+    .main_nav  a{
+        text-decoration: none;
+    }
 }
 
 /*Style Guide*/
