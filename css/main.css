@@ -71,6 +71,8 @@ img{
     color: var(--background);
 }
 
+
+
 /*SCROLLBAR*/
 ::-webkit-scrollbar {
     width: 0.5rem;
@@ -241,7 +243,7 @@ footer{
 
 .dot_active {
   background-color: var(--accent);
-}
+}                       
 
 .prev_arrow, .next_arrow{
     cursor: pointer;
@@ -273,6 +275,7 @@ footer{
     margin: 0.7rem 0;
     display: flex;
     align-items: stretch;
+    position:relative;
 }
 
 .card img{
@@ -288,6 +291,10 @@ footer{
 
 .card > .card_text{
     width: 60%;
+}
+
+.card .button{
+    float: right;
 }
 
 /*ZOOM-IN IMAGES*/
