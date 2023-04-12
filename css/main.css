@@ -71,6 +71,10 @@ img{
     color: var(--background);
 }
 
+.majormono{
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+}
 
 
 /*SCROLLBAR*/
@@ -123,7 +127,7 @@ img{
 }
 
 .main_nav  a{
-    text-decoration-thickness: 2rem;
+    text-decoration-thickness: 0.2rem;
 }
 
 /* HOME PAGE NAV */
@@ -304,6 +308,19 @@ footer{
     .two-image-strip{
         grid-template-columns: 1fr;
     }
+}
+
+.one-image-strip{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+}
+
+.one-image-strip > img{
+    height: 100%;
+    object-fit: cover;
 }
 
 /*CARDS - for browse display*/

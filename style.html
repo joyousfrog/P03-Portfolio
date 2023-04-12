@@ -12,9 +12,9 @@
 
     <nav class="main_nav">
       <a href="index.html">Home</a>
-      <a href="template_browse.html">Games</a>
-      <a href="threed.html">3D</a>
-      <a href="graphics.html">Graphics</a>
+      <a href="browse_games.html">Games</a>
+      <a href="browse_threed.html">3D</a>
+      <a href="about.html">About</a>
     </nav>
 
     <div id="style-content">
@@ -31,9 +31,8 @@
 
           <section id="interactive_elements">
             <h2>Interactive Elements</h2>
-
-
             <section class="element">
+              
               <h3>In-text link</h3>
 
               <h4>CSS selector:</h4>
@@ -51,16 +50,16 @@
             <!-- Default Button styling section -->
             <section class="element">
 
-              <h3>Navigation Link</h3>
+              <h3>Buttons</h3>
 
               <h4>CSS selector:</h4>
-              <p>.button-nav</p>
+              <p>.button</p>
 
               <h4>Sample code:</h4>
-              <code>&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Default Button&lt;/a&gt;</code>
+              <code>&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Default Button&lt;/a&gt;</code>
 
               <h4>Rendered element:</h4>
-              <a class="button-nav" href="#">Default Button</a>
+              <a class="button" href="#">Default Button</a>
 
             </section>
 
@@ -99,30 +98,88 @@
 
               <h4>Sample code:</h4>
               <code>
-                &lt;div class=&quot;card&quot;&gt;<br>
-                &lt;img src=&quot;images/placeholder.jpg&quot; alt=&quot;Placeholder Image.&quot;&gt;<br>
-                &lt;div class=&quot;card_text&quot;&gt;<br>
-                    &lt;h2&gt;Fields Enjoyer DX&lt;/h2&gt;<br>
-                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper diam leo, vitae viverra ipsum efficitur aliquam. Quisque nec rutrum lacus, nec efficitur nulla. Integer pharetra vitae risus eu placerat. In hac habitasse platea dictumst. Proin vehicula maximus maximus. Nullam eget blandit mauris...&lt;/p&gt;<br>
-                &lt;/div&gt;<br>
-            &lt;/div&gt;
+                &lt;div class=&quot;card&quot;&gt; <br>
+                &lt;div class=&quot;card_image&quot;&gt;
+                  &lt;img src=&quot;images/borbo/process1.png&quot; alt=&quot;An image of the layout of the levels in my game Borbo&apos;s Quest.&quot;&gt;<br>
+                &lt;/div&gt; <br>
+                &lt;div class=&quot;card_text&quot;&gt; <br>
+                    &lt;a href=&quot;project_borbo.html&quot;&gt;&lt;h2&gt;Borbo&apos;s Quest&lt;/h2&gt;&lt;/a&gt; <br>
+                    &lt;h3 class=&quot;roles&quot;&gt;Game Designer, Programmer, Artist, Director&lt;/h3&gt; <br>
+                    &lt;p&gt;A cute and charming puzzle/adventure game built for the original GameBoy handheld console. The game was liscened to the online games platform CoolMath Games, where it has recieved much acclaim.&lt;/p&gt; <br>
+                    &lt;p&gt;&lt;a href=&quot;project_borbo.html&quot; class=&quot;button&quot;&gt;Read more...&lt;/a&gt;&lt;/p&gt; <br>
+                  &lt;/div&gt; <br>
+              &lt;/div&gt; <br>
               </code>
 
               <h4>Rendered element:</h4>
               <div class="card">
-                <img src="images/placeholder.jpg" alt="Placeholder Image.">
-                <div class="card_text">
-                    <h2>Fields Enjoyer DX</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper diam leo, vitae viverra ipsum efficitur aliquam. Quisque nec rutrum lacus, nec efficitur nulla. Integer pharetra vitae risus eu placerat. In hac habitasse platea dictumst. Proin vehicula maximus maximus. Nullam eget blandit mauris...</p>
+                <div class="card_image">
+                  <img src="images/borbo/process1.png" alt="An image of the layout of the levels in my game Borbo's Quest.">
                 </div>
-            </div>
+                <div class="card_text">
+                    <a href="project_borbo.html"><h2>Borbo's Quest</h2></a>
+                    <h3 class="roles">Game Designer, Programmer, Artist, Director</h3>
+                    <p>A cute and charming puzzle/adventure game built for the original GameBoy handheld console. The game was liscened to the online games platform CoolMath Games, where it has recieved much acclaim.</p>
+                    <p><a href="project_borbo.html" class="button">Read more...</a></p>
+                  </div>
+              </div>
             </section>
 
 
           </section>
           <!-- // INTERACTIVE ELEMENTS SECTION -->
 
+          <!-- //IMAGES-->
 
+          <section id="image_elements">
+            <h2>Image Containers</h2>
+            
+            <section class="element">
+              <h3>Single-column Images</h3>
+              <h4>CSS selector:</h4>
+              .one-image-strip
+
+              <h4>Sample Code:</h4>
+              &lt;div class=&quot;one-image-strip&quot;&gt;&lt;img src=&quot;images/3d/espresso.png&quot;&gt;&lt;/div&gt;&lt;br&gt;
+
+              <h4>Rendered Element:</h4>
+              <div class="one-image-strip"><img src="images/3d/espresso.png"></div><br>
+
+              <h3>Dual-column Images</h3>
+              <h4>CSS selector:</h4>
+              .two-image-strip
+
+              <h4>Sample Code:</h4>
+              &lt;div class=&quot;two-image-strip&quot;&gt;<br>
+              &lt;img src=&quot;images/borbo/sketch.png&quot; alt =&quot;A screenshot of my game Borbo&apos;s Quest.&quot;&gt;<br>
+              &lt;img src=&quot;images/borbo/sketch_real.png&quot; alt =&quot;A screenshot of my game Borbo&apos;s Quest.&quot;&gt;<br>
+              &lt;/div&gt;
+
+              <h4>Rendered Element:</h4>
+              <div class="two-image-strip">
+                <img src="images/borbo/sketch.png" alt ="A screenshot of my game Borbo's Quest.">
+                <img src="images/borbo/sketch_real.png" alt ="A screenshot of my game Borbo's Quest.">
+              </div>
+
+              <h3>Quad-column Images</h3>
+              <h4>CSS selector:</h4>
+              .four-image-strip
+
+              <h4>Sample Code:</h4>
+              &lt;div class=&quot;four-image-strip&quot;&gt;<br>
+              &lt;img src=&quot;images/borbo/Untitled.png&quot; alt =&quot;A screenshot of my game Borbo&apos;s Quest.&quot;&gt;<br>
+              &lt;img src=&quot;images/borbo/sc4.png&quot; alt =&quot;A screenshot of my game Borbo&apos;s Quest.&quot;&gt;<br>
+              &lt;img src=&quot;images/borbo/forrest.png&quot; alt =&quot;A screenshot of my game Borbo&apos;s Quest.&quot;&gt;<br>
+              &lt;img src=&quot;images/borbo/sc6.png&quot; alt =&quot;A screenshot of my game Borbo&apos;s Quest.&quot;&gt;<br>
+              &lt;/div&gt;<br>
+
+              <h4>Rendered Element:</h4>
+              <div class="four-image-strip">
+                <img src="images/borbo/Untitled.png" alt ="A screenshot of my game Borbo's Quest.">
+                <img src="images/borbo/sc4.png" alt ="A screenshot of my game Borbo's Quest.">
+                <img src="images/borbo/forrest.png" alt ="A screenshot of my game Borbo's Quest.">
+                <img src="images/borbo/sc6.png" alt ="A screenshot of my game Borbo's Quest.">
+              </div>
 
           <!-- TEXT ELEMENTS SECTION // -->
           <section id="text_elements">
@@ -204,15 +261,6 @@
             </section>
 
           </section>
-          <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-          <!-- COMBINED ELEMENTS SECTION // -->
-          <section id="combined_elements">
-            <h2>Combined Elements</h2>
-            <p>xxxxxxxxxxxx</p>
-          </section>
           <!-- // COMBINED ELEMENTS SECTION -->
 
           <section id="branding">
@@ -232,10 +280,6 @@
               <p class="roboto"><a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono</a> by Christian Robertson</p>
               <p>Roboto Mono is for the body text. It is a clearly legible serifed font, which makes reading chunks of text easier to follow. It's monospace style makes it visually appropriate for someone who works with computers.</p>
             </section>
-          </section>
-          <section id="citations">
-            <h2>Citations</h2>
-            <p>xxxxxxxxxxxxxxxx</p>
           </section>
             </div>
           </div>
