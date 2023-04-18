@@ -469,6 +469,7 @@ footer{
 
 @media (max-width: 1200px){
     .home_grid{
+        width: 90%;
         max-width: 600px;
         margin: auto;
         display: grid;
