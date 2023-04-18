@@ -160,6 +160,14 @@ img{
 .line{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    padding:0.1rem;
+    margin-bottom: 0.4rem;
+    background: linear-gradient(90deg, var(--background_accent) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+.line_reverse{
+    background: linear-gradient(270deg, var(--background_accent) 0%, rgba(255, 0, 0, 0) 80%);
 }
 
 .word{
