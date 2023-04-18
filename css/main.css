@@ -11,7 +11,7 @@
 :root{
     --background: #242423;
     --background_gradient: #282830;
-    --background_accent: #4a4a52;
+    --background_accent: #3a3a3d;
     --content:  #FDFFFC;
     --accent: #6BAA75;
     --accent_highlight: #4e925a;
@@ -325,8 +325,9 @@ footer{
 
 /*CARDS - for browse display*/
 .card{
-    border: 1px var(--content) dashed;
-    padding: 0.4rem;
+    /*border: 1px var(--content) dashed;*/
+    background-color: var(--background_accent);
+    padding: 0.6rem;
     flex-direction: row;
     margin: 0.7rem 0;
     display: flex;
@@ -371,6 +372,7 @@ footer{
 
     .card .card_image{
         width: 100%;
+        padding-right: 0px;
     }
 }
 
