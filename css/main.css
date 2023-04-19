@@ -526,6 +526,17 @@ footer{
     margin: auto;
 }
 
+@media (max-width: 1000px){
+    .project_grid{
+        grid-template-columns: 1fr;
+    }
+
+    .project_info{
+        width: 90%;
+        margin: auto;
+    }
+}
+
 /*Browse*/
 .browse_grid{
     display: grid;
