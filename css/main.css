@@ -573,6 +573,10 @@ footer{
     .main_nav  a{
         text-decoration: none;
     }
+
+    html{
+        font-size: 1.06rem;
+    }
 }
 
 /*Style Guide*/
