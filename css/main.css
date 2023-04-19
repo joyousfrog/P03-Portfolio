@@ -537,7 +537,7 @@ footer{
     margin: auto;
 }
 
-@media (max-width: 693px){
+@media (max-width: 1000px){
     .browse_grid{
         display: grid;
         grid-template-columns: 1fr;
