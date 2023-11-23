@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stephen Kerschbaumer - In Bloom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <nav class="main_nav">
+    <a href="index.html">Home</a>
+    <a href="browse_games.html">Games</a>
+    <a href="browse_threed.html">3D</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <div id="project_content">
+
+    <div class="project_grid">
+
+      <div class="sidebar">
+      </div>
+
+      <div class="project_info">
+        <div class="project_gallery"><img src="images/In Bloom/IN_BLOOM_screenshot22198.png" alt="A screenshot of the city, covered in lush greenery."></div>
+
+        <div class="project_description">
+          <h2>In Bloom</h2>
+          <div class="project_credits">
+            <p>
+              Stephen Kerschbaumer:
+              Game Designer, Developer, Level Designer, UX, and SFX
+            </p>
+            <p>
+              Sahba Hajihoseini: 
+              Lead Developer, AI Designer, and Sound Design
+            </p>
+            <p>
+              Tatum Fry: 
+              Prop Designer, Environment Designer, and Character Designer 
+            </p>
+            <p>
+              Emmanuel Navas Castro:
+              Animator, Texture Artist, and SFX
+            </p>
+          </div>
+
+          <p>
+            In Bloom is a VR puzzle game created over the course of two months in a team of 4 for the intensive "Semester in Alternate Realities" course at Simon Fraser University. 
+            For this project, I was the lead game designer, and one of two programmers. 
+            This project was made in the Unity game engine. 
+          </p>
+
+          <div class="two-image-strip">
+            <img src="images/In Bloom/apocalyse.png" alt ="A screenshot of the game In Bloom.">
+            <img src="images/In Bloom/exit.png" alt ="A screenshot of the game In Bloom.">
+          </div>
+
+          <p>
+            The game is centered around themes of nature and climate change. 
+            The player starts in a desolate and polluted city, and must learn to work with a small, magical creature in order to bring life back to the city. 
+            Our challenge was to create a project which used the medium of VR for good, and we did so by creating a game which spreads messages of harmony with nature and collaborative problem solving using the innate empathetic affordances of VR.
+          </p>
+
+          <h3>Game Design</h3>
+          <p>
+            The core gameplay mechanic of In Bloom is effectively playing fetch with your compainion character.
+            The companion will run towards marshmallows the player tosses around the map, allowing the player to command and collaborate with it.
+            I pitched this concept to my team because of its simple and intuitive nature that fits the medium of VR well.
+            VR presents a number of challenges for designers, one of the most important of which is control and navigation, which can often feel obtuse and confusing.
+            Out concept calls upon basic human instincts and gestures such as spatial exploration, pointing, and throwing, all of which are enabled by the enhanced spatial presence provided by VR.
+          </p>
+
+          <div class="image-strip-figure">
+            <div class="one-image-strip">
+              <img src="images/In Bloom/gameplay_throw.png" alt ="A screenshot of the game In Bloom.">
+            </div>
+            <p>
+              The player throws a marshmallow onto a large button.
+            </p>
+            <div class="one-image-strip">
+              <img src="images/In Bloom/gameplay_eat.png" alt ="A screenshot of the game In Bloom.">
+            </div>
+            <p>
+              The companion runs to eat the marshmallow. In doing so, it activates the button below it, opening a door.
+            </p>
+          </div>
+
+          <h3>Level Design</h3>
+
+          <p>
+            Taking advantage of VR's immersive nature, the levels and their puzzles are based on spatial exploration and problem-solving.
+            As the game was built to be shown in a public showcase, where people of all skill levels could play, no puzzle could be too hard, as to not stump novice players.
+            Because of this, I had to find ways to make the puzzles satisfying to complete, even for experienced gamers, all while being simple enough for a beginner player to figure out just by thoroughly exploring the space.
+            Larger spaces were broken-down as to be easily digestable and not overwhelming, and puzzles were given clear visual and audio indicators, taking advantage of spatial design techniques such as contrasting lighting, strong visual hierarchies based on patterning, and clear segmentation of space.
+            
+          </p>
+          
+          <div class="image-strip-figure">
+            <div class="two-image-strip">
+              <img src="images/In Bloom/level_sketches.jpg" alt ="A scan of my sketchbook, showing multiple top-down level sketches">
+              <img src="images/In Bloom/level4_annotated.png" alt ="A screenshot of one of these levels, made in Unity probuilder. There are annotations highlighting key elements">
+            </div>
+            <p>
+              The levels started as sketches in my notebook as part of rapid ideation.
+              Next, I greyboxed them in Unity's probuilder 3D modeling software. 
+            </p>
+            <div class="two-image-strip">
+              <img src="images/In Bloom/level4_in_editor.png" alt ="A before photo of the level, greyboxed.">
+              <img src="images/In Bloom/level4_in_editor_refined.png" alt ="An after photo of the level, decorated and filled with props.">
+            </div>
+            <p>After testing, they were exported for refinement in Maya by our environmental designer, following my annotated diagrams explaining key features crucial to the puzzle's function. We then decorated the level together in-engine.</p>
+          </div>
+
+          <h3>Systems Design</h3>
+          <p>
+            As a programmer and designer, I was responsible for building the character controller for this project. 
+            Another substantial design challenge whchh one must overcome while designing for VR is ensuring player comfort throughout, and giving adequate feedback upon simulated actions. 
+            The movement system I created includes motion dampening, vignetting, and snap turning, all of which are toggleable to account for different preferences and comfort levels with VR. 
+            We underwent multiple rounds of playtesting to create a set of mechanics we were confident in letting the public play without concern for nausea or sim sickness. 
+            This process involved weekly playtesting sessions we held after class, where at the end we asked playtesters to fill-out surveys such that we could meaure any positive or negative changes made.
+          </p>
+
+          <h3>Project Management</h3>
+          <p>
+            As the member of our team with the most experience across the various fields required for building a VR game, such as programming, 3D modelling, and game design, I was often responsible for coordinating and directing the work of my teammates. 
+            My top priority in this sense was ensuring every team member was enthusiastic for the project we were building, and felt heard in our meetings. 
+            At the start of every work day, I would hold informal "stand-ups" where I would check-in with my teammates to see how they were doing and review their work. 
+            This gave us a great sense of community and let everyone be engaged with each aspect of the project and give feedback, even if they're never directly involved with it.
+          </p>
+          <p>
+            Our team decided to use the SCRUM framework to guide or process.
+            This was the first time the majority of us had used a productivity methodology such as SCRUM, so it was an important learning experience.
+            In the end, I think it proved to be successful, as the daily sprints ensured we were making steady progess on the project.
+            Because of this, we had minimal crunch at the end of the semester, with all of our work being fininshed and in a presentable state comfortably before our agreed-upon deadline.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Copyright Stephen Kerschbaumer 2023<br>
+    <div class="footer-nav">
+      <a href="style.html">Style Guide</a>
+      <a href="sources.html">Sources</a>
+      <a href="https://github.com/joyousfrog/P03-Portfolio">Git Repo</a>
+    </div>
+  </footer>
+</body>
