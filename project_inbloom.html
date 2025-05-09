@@ -110,14 +110,21 @@
             <img src="images/In Bloom/kneeling.jpg" alt ="The player feeding their companion">
           </div>
         
-          <h3>Level Design</h3>
+          <h3>Systems Design</h3>
+          <p>
+            As a programmer and designer, I was responsible for building the character controller for this project. 
+            Another substantial design challenge which one must overcome while designing for VR is ensuring player comfort throughout, and giving adequate feedback upon simulated actions. 
+            The movement system I created includes motion dampening, vignetting, and snap turning, all of which are toggleable to account for different preferences and comfort levels with VR. 
+            We underwent multiple rounds of playtesting to create a set of mechanics we were confident in letting the public play without concern for nausea or sim sickness. 
+            This process involved weekly playtesting sessions we held after class, where at the end we asked playtesters to fill-out surveys such that we could measure any positive or negative changes made.
+          </p>
 
+          <h3>Level Design</h3>
           <p>
             Taking advantage of VR's immersive nature, the levels and their puzzles are based on spatial exploration and problem-solving.
             As the game was built to be shown in a public showcase, where people of all skill levels could play, no puzzle could be too hard, as to not stump novice players.
             Because of this, I had to find ways to make the puzzles satisfying to complete, even for experienced gamers, all while being simple enough for a beginner player to figure out just by thoroughly exploring the space.
             Larger spaces were broken-down as to be easily digestible and not overwhelming, and puzzles were given clear visual and audio indicators, taking advantage of spatial design techniques such as contrasting lighting, strong visual hierarchies based on patterning, and clear segmentation of space.
-            
           </p>
           
           <div class="image-strip-figure">
@@ -136,14 +143,89 @@
             <p>After testing, they were exported for refinement in Maya by our environmental designer, following my annotated diagrams explaining key features crucial to the puzzle's function. We then decorated the level together in-engine.</p>
           </div>
 
-          <h3>Systems Design</h3>
+          <h3>Level Walkthrough</h3>
           <p>
-            As a programmer and designer, I was responsible for building the character controller for this project. 
-            Another substantial design challenge which one must overcome while designing for VR is ensuring player comfort throughout, and giving adequate feedback upon simulated actions. 
-            The movement system I created includes motion dampening, vignetting, and snap turning, all of which are toggleable to account for different preferences and comfort levels with VR. 
-            We underwent multiple rounds of playtesting to create a set of mechanics we were confident in letting the public play without concern for nausea or sim sickness. 
-            This process involved weekly playtesting sessions we held after class, where at the end we asked playtesters to fill-out surveys such that we could measure any positive or negative changes made.
+            This is the final level of the game. As this game was built as part of a public showcase, where we were anticipating people of any skill level, it is not particularly difficult, though it does require lateral and spatial thinking to solve. In this walkthrough, I will be describing the correct path, and noting points of challenge for the player throughout.
           </p>
+
+          <div class="image-strip-explanation image-strip-explanation-wide">
+            <div class="stacked-images">
+              <img src="images/In Bloom/in bloom level 3 top view.png" alt ="Overhead view of the level.">
+              <img src="images/In Bloom/l3_entrance.png" alt ="Player's Perspective.">
+            </div>
+            <div>
+              <h3>Player enters the level:</h3>
+              <p>The player enters the level and sees two doorways <span class="ulblue">&#40;Doors A and
+                B&#41;</span> before them, both attached to a pressure-activated button <span class="ulred">&#40;Button A&#41;</span>
+                as indicated by the large wires leading from it. They can see through the clear doorway
+                that there is another button though the left path <span class="ulred">&#40;Button B&#41;</span>,
+                which is connected to another door <span class="ulblue">&#40;Door C&#41;</span> out of reach.
+                To the left there is a small doorway that is just large enough for their companion to fit through
+                <span class="ulgreen">&#40;Partner Passage A&#41;</span>.</p>
+            </div>
+
+            <div class="divider"><hr></div>
+
+            <div class="stacked-images">
+              <img src="images/In Bloom/in bloom level 3 02.png" alt ="Overhead view of the level.">
+              <img src="images/In Bloom/l3_01.png" alt ="Player's Perspective.">
+            </div>
+            <div>
+              <h3>Player stands on Button A:</h3>
+              <p>By standing on <span class="ulred">Button A</span>, the player opens <span class="ulblue">Doors A and B</span> for their partner to pass through.
+                By sending their partner in through <span class="ulblue">Door A</span>, they can have it stand on <span class="ulred">Button B</span>. In doing so,
+                they open <span class="ulblue">Door C</span>, presenting the exit. This might seem like a solution but is a red herring,
+                as when the player steps off of <span class="ulred">Button A</span>, <span class="ulblue">Door B</span> closes before them, preventing further progress.</p>
+            </div>
+
+            <div class="divider"><hr></div>
+
+            <div class="stacked-images">
+              <img src="images/In Bloom/in bloom level 3 top view 03.png" alt ="Overhead view of the level.">
+              <img src="images/In Bloom/l3_02.png" alt ="Player's Perspective.">
+            </div>
+            <div>
+              <h3>Partner is placed on Button A:</h3>
+              <p>Instead, the player may choose to place their partner on <span class="ulred">Button A</span>, opening <span class="ulblue">Doors A and B</span>. They
+                may then progress through <span class="ulblue">Door A</span> to stand on <span class="ulred">Button B</span> in order to open <span class="ulblue">Door C</span>. This would again
+                seem like a potential solution, though they will quickly realize this will not work when they
+                step off <span class="ulred">Button B</span>, and <span class="ulblue">Door C</span> in turn closes.</p>
+              <p>This does give the player the opportunity to make further observations on the level, though.
+                They might notice that the wall separating the two rooms behind <span class="ulblue">Door A and B</span> is broken, allowing
+                for them to reach over it, and throw their bait through it. At this point they will also likely
+                have observed both <span class="ulgreen">Partner Passages</span>, giving them an idea of how they might position their partner.</p>
+            </div>
+
+            <div class="divider"><hr></div>
+
+            <div class="stacked-images">
+              <img src="images/In Bloom/in bloom level 3 top view 04.png" alt ="Overhead view of the level.">
+              <img src="images/In Bloom/l3_03.png" alt ="Player's Perspective.">
+            </div>
+            <div>
+              <h3>Player moves though Door B:</h3>
+              <p>With the partner on <span class="ulred">Button A</span>, the player moves through <span class="ulblue">Door B</span>. Here, they can then reach through
+                the hole in the wall in order to send their partner to <span class="ulred">Button B</span>, in the process closing <span class="ulblue">Doors A
+                and B</span>, with no means of reopening them.</p>
+                <p>Until the player has explored the space, this may
+                seem counterintuitive, as it causes them to trap themself between <span class="ulblue">Doors B and C</span>. As this is
+                the last level, it serves the purpose of the narrative, for them to put themself in a vulnerable,
+                trapped state, and to rely on their partner in order to escape.</p>
+            </div>
+
+            <div class="divider"><hr></div>
+
+            <div class="stacked-images">
+              <img src="images/In Bloom/in bloom level 3 top view end.png" alt ="Overhead view of the level.">
+              <img src="images/In Bloom/l3_end.png" alt ="Player's Perspective.">
+            </div>
+            <div>
+              <h3>The Player has completed the level:</h3>
+              <p>When the player solves the puzzle by positioning their partner on <span class="ulred">Button B</span>, opening <span class="ulblue">Door C</span>, the
+                exit opens and their partner runs to it. The partner begins to dance and plants spread throughout
+                the level.</p>
+            </div>
+          </div>
 
           <h3>Project Management</h3>
           <p>
@@ -163,7 +245,7 @@
           <p>
             I am incredibly proud of this project, as I believe it clearly demonstrates a number of my greatest strengths as a game designer.
             The integration of core mechanics, narrative, and level design makes for an experience that is approachable yet deep in its gameplay and message.
-            If I were to have more time, I would want to further refine the level designs and experiement with new puzzle mechanics and layouts.
+            If I were to have more time, I would want to further refine the level designs and experiment with new puzzle mechanics and layouts.
           </p>
         </div>
       </div>

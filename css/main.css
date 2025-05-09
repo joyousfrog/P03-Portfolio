@@ -328,6 +328,7 @@ footer{
 
 .two-image-strip > img{
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -376,15 +377,45 @@ footer{
     row-gap: 0rem;
 }
 
+.image-strip-explanation-wide{
+    grid-template-columns: 2fr 1fr;
+}
+
 .image-strip-explanation > img{
     width: 100%;
     margin: auto;
+}
+
+.image-strip-explanation > div{
+    width: 100%;
+    margin: auto;
+}
+
+.divider{
+    grid-column: span 2;
+    width: auto;;
 }
 
 @media (max-width: 600px){
     .image-strip-explanation{
         grid-template-columns: 1fr;
     }
+}
+
+.stacked-images > img{
+    width: 100%;
+}
+
+.ulred{
+    color: rgb(255, 104, 66);
+}
+
+.ulblue{
+    color: rgb(75, 204, 255);
+}
+
+.ulgreen{
+    color: rgb(116, 255, 74);
 }
 
 /*CARDS - for browse display*/
