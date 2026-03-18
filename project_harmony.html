@@ -1,131 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="utf-8" />
+      <title>Stephen Kerschbaumer - Harmony</title>
+      <link href="css/main.css" rel="stylesheet" />
+   </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="utf-8">
-  <title>Stephen Kerschbaumer - Harmony</title>
-  <link href="css/main.css" rel="stylesheet">
-</head>
+   <body>
+      <header></header>
 
-<body>
-  <header>
+      <nav class="main_nav">
+         <a href="index.html">Home</a>
+         <a href="browse_games.html">Games</a>
+         <a href="browse_threed.html">3D</a>
+         <a href="about.html">About</a>
+      </nav>
 
-  </header>
+      <div id="project_content">
+         <div class="project_grid">
+            <div class="sidebar"></div>
 
-  <nav class="main_nav">
-    <a href="index.html">Home</a>
-    <a href="browse_games.html">Games</a>
-    <a href="browse_threed.html">3D</a>
-    <a href="about.html">About</a>
-  </nav>
+            <div class="project_info">
+               <div class="project_gallery">
+                  <div class="yt-video">
+                     <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/vDjXsmNRfYY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                           accelerometer;
+                           autoplay;
+                           clipboard-write;
+                           encrypted-media;
+                           gyroscope;
+                           picture-in-picture;
+                           web-share;
+                        "
+                        allowfullscreen
+                     ></iframe>
+                  </div>
+               </div>
 
-  <div id="project_content">
+               <div class="project_description">
+                  <h2>Harmony: Ocean Conductor VR</h2>
 
-    <div class="project_grid">
+                  <p>
+                     Harmony is an immersive VR experience in which the player
+                     explores a serene underwater environment where they are
+                     given the magical ability to conduct music using schools of
+                     fish. The game was built using Unity 3D and the XR
+                     Interaction toolkit, alongside a team of 4 classmates over
+                     the course of 2 months.
+                  </p>
 
-      <div class="sidebar">
+                  <div class="project_credits">
+                     <p>
+                        SFU IAT 445 - Immersive Environments, Spring 2023.
+                        Professor Steve DiPaola.
+                     </p>
+                     <a
+                        href="https://teamharmony.itch.io/harmony"
+                        class="button"
+                        >Download on Itch.io</a
+                     >
+                     <hr />
+                     <p>
+                        Stephen Kerschbaumer: Lead Programmer, Game Designer,
+                        BOIDs Engineer
+                     </p>
+                     <p>
+                        Gabriel Kwong Kai Qian: Game Director, Technical
+                        Director, Programmer
+                     </p>
+                     <p>Yiming Zheng: Environmental Artist, Technical Artist</p>
+                     <p>Rohan Samuel: Music, UI Designer, Audio Engineer</p>
+                     <p>
+                        Emmanuel Navas Castro: Visual Designer, VFX, Graphic
+                        Designer
+                     </p>
+                  </div>
+
+                  <br />
+
+                  <div class="two-image-strip">
+                     <img
+                        src="images/harmony/harmony_ray.jpg"
+                        alt="A screenshot of the underwater environment."
+                     />
+                     <img
+                        src="images/harmony/harmony_fish.jpg"
+                        alt="A screenshot of the underwater environment."
+                     />
+                  </div>
+
+                  <h3>Design Philosophy</h3>
+
+                  <p>
+                     Something I find very important when designing a project is
+                     flow. As this was a project intended to be presented in a
+                     public showcase, where anyone from the public could play
+                     it, we needed to create an experience that would be
+                     engaging for all skill levels. VR is something that can
+                     take time to get used to, so I wanted the user to control
+                     the pace with which they navigate the experience, allowing
+                     for them time to acclimate to the controls and interface.
+                     The game's systems develop as the player chooses to
+                     progress through the space, with each area encouraging the
+                     user to engage more with the core mechanics of the game.
+                  </p>
+
+                  <div class="two-image-strip">
+                     <img
+                        src="images/harmony/harmony_progression.jpg"
+                        alt="A scan of my sketchbook depicting the progression flow of Harmony."
+                     />
+                     <img
+                        src="images/harmony/map_annotated.png"
+                        alt="A scan of my sketchbook depicting the progression flow of Harmony."
+                     />
+                  </div>
+
+                  <p>
+                     I believe this strategy proved to be highly effective in
+                     the end, as we produced a game that even those entirely
+                     unfamiliar with VR could play comfortably. We observed
+                     those that were new to VR enjoyed pacing themselves as they
+                     moved through the space, while those who were experienced
+                     with VR were immediately familiar with the controls moved
+                     straight through the experience at a steady pace.
+                  </p>
+
+                  <h3>Iterative Process</h3>
+
+                  <p>
+                     As both a developer and designer, I understand the
+                     importance of rapid prototyping, and spent a considerable
+                     amount of time integrating features that never saw the
+                     light of day. Despite this, the effort was never wasted. We
+                     took time to test all of these mechanics (internally and
+                     externally), and only picked those that felt the best built
+                     upon our intended user experience.
+                  </p>
+
+                  <div class="yt-video">
+                     <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/fD5MiqYAjCo"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                           accelerometer;
+                           autoplay;
+                           clipboard-write;
+                           encrypted-media;
+                           gyroscope;
+                           picture-in-picture;
+                           web-share;
+                        "
+                        allowfullscreen
+                     ></iframe>
+                  </div>
+
+                  <h3>Reflection</h3>
+                  <p>
+                     Ultimately, I believe this approach led to us creating a
+                     truly impressive project despite the limitations of this
+                     being a class project with a constrained development time.
+                     Instead of making a proof of concept, we built a
+                     highly-manicured and refined vertical slice that can easily
+                     be built-upon and expanded, but still stands on its own as
+                     a powerful experience. Were I to have more time, there are
+                     a number of features I would have liked to add, such as
+                     responsive tutorialization and clearer interaction
+                     prompting.
+                  </p>
+
+                  <p>
+                     You can find-out more about the project on our
+                     <a
+                        href="https://stephenkerschbaumer.wixsite.com/ocean-conductor-vr"
+                        >website</a
+                     >.
+                  </p>
+                  <p>
+                     <a
+                        href="https://teamharmony.itch.io/harmony"
+                        class="button"
+                        >Download on Itch.io</a
+                     >
+                  </p>
+               </div>
+            </div>
+         </div>
       </div>
 
-      <div class="project_info">
-        <div class="project_gallery"><div class="yt-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/vDjXsmNRfYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div></div>
-
-        <div class="project_description">
-          <h2>Harmony: Ocean Conductor VR</h2>
-
-          <p>
-            Harmony is an immersive VR experience in which the player explores a serene underwater environment where they are given the magical ability to conduct music using schools of fish. 
-            The game was built using Unity 3D and the XR Interaction toolkit, alongside a team of 4 classmates over the course of 2 months.
-          </p>
-
-          <div class="project_credits">
-            <p>SFU IAT 445 - Immersive Environments, Spring 2023. Professor Steve DiPaola.</p>
-            <a href="https://teamharmony.itch.io/harmony" class="button">Download on Itch.io</a>
-            <hr>
-            <p>
-              Stephen Kerschbaumer:
-              Lead Programmer, Game Designer, BOIDs Engineer
-            </p>
-            <p>
-              Gabriel Kwong Kai Qian: Game Director, Technical Director, Programmer
-            </p>
-            <p>
-              Yiming Zheng: Environmental Artist, Technical Artist
-            </p>
-            <p>
-              Rohan Samuel: Music, UI Designer, Audio Engineer
-            </p>
-            <p>
-              Emmanuel Navas Castro: Visual Designer, VFX, Graphic Designer
-            </p>
-          </div>
-
-          <br>
-
-          <div class="two-image-strip">
-            <img src="images/harmony/harmony_ray.jpg" alt ="A screenshot of the underwater environment.">
-            <img src="images/harmony/harmony_fish.jpg" alt ="A screenshot of the underwater environment.">
-          </div>
-
-          <h3>Design Philosophy</h3>
-          
-          <p>
-            Something I find very important when designing a project is flow. 
-            As this was a project intended to be presented in a public showcase, where anyone from the public could play it, we needed to create an experience that would be engaging for all skill levels.
-            VR is something that can take time to get used to, so I wanted the user to control the pace with which they navigate the experience, allowing for them time to acclimate to the controls and interface. 
-            The game's systems develop as the player chooses to progress through the space, with each area encouraging the user to engage more with the core mechanics of the game.
-          </p>
-
-          <div class="two-image-strip">
-            <img src="images/harmony/harmony_progression.jpg" alt ="A scan of my sketchbook depicting the progression flow of Harmony.">
-            <img src="images/harmony/map_annotated.png" alt ="A scan of my sketchbook depicting the progression flow of Harmony.">
-          </div>
-
-          
-
-          <p>
-            I believe this strategy proved to be highly effective in the end, as we produced a game that even those entirely unfamiliar with VR could play comfortably.
-            We observed those that were new to VR enjoyed pacing themselves as they moved through the space, while those who were experienced with VR were immediately familiar with the controls moved straight through the experience at a steady pace. 
-          </p>
-
-          <h3>Iterative Process</h3>
-
-          <p>
-            As both a developer and designer, I understand the importance of rapid prototyping, and spent a considerable amount of time integrating features that never saw the light of day. 
-            Despite this, the effort was never wasted. 
-            We took time to test all of these mechanics (internally and externally), and only picked those that felt the best built upon our intended user experience. 
-          </p>
-          
-          <div class="yt-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fD5MiqYAjCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-
-          
-          <h3>Reflection</h3>
-          <p>
-            Ultimately, I believe this approach led to us creating a truly impressive project despite the limitations of this being a class project with a constrained development time. 
-            Instead of making a proof of concept, we built a highly-manicured and refined vertical slice that can easily be built-upon and expanded, but still stands on its own as a powerful experience.
-            Were I to have more time, there are a number of features I would have liked to add, such as responsive tutorialization and clearer interaction prompting. 
-          </p>
-
-          <p>You can find-out more about the project on our <a href="https://stephenkerschbaumer.wixsite.com/ocean-conductor-vr">website</a>.</p>
-          <p>
-            <a href="https://teamharmony.itch.io/harmony" class="button">Download on Itch.io</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <footer>
-    Copyright Stephen Kerschbaumer 2025<br>
-    <div class="footer-nav">
-      <a href="https://frogsoft.itch.io/">Itch.io</a>
-      <a href="https://bsky.app/profile/frogsoft.bsky.social">Bluesky</a>
-      <a href="Stephen_Kerschbaumer_Game_Design_CV.pdf">CV</a>
-    </div>
-  </footer>
-</body>
+      <footer>
+         Copyright Stephen Kerschbaumer 2026<br />
+         <div class="footer-nav">
+            <a href="https://frogsoft.itch.io/">Itch.io</a>
+            <a href="https://bsky.app/profile/frogsoft.bsky.social">Bluesky</a>
+            <a href="Stephen_Kerschbaumer_Game_Design_CV.pdf">CV</a>
+         </div>
+      </footer>
+   </body>
+</html>

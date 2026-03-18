@@ -516,6 +516,7 @@ footer{
 .card .card_image img{
     width: 100%;
     height: 100%;
+     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
 
@@ -546,6 +547,12 @@ footer{
         width: 100%;
         padding-right: 0px;
     }
+}
+
+/*PIXEL ART IMAGES*/
+
+.pixel_art{
+    image-rendering: pixelated;
 }
 
 /*ZOOM-IN IMAGES*/
@@ -671,6 +678,11 @@ footer{
 }
 
 /*Project*/
+
+.project_gallery > img{
+    width: 100%;
+}
+
 .project_grid{
     display: grid;
     grid-template-columns: 1fr 7fr;

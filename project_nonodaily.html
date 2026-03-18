@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Stephen Kerschbaumer - NonoDaily</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="css/main.css" rel="stylesheet" />
+   </head>
+
+   <body>
+      <header></header>
+
+      <nav class="main_nav">
+         <a href="index.html">Home</a>
+         <a href="browse_games.html">Games</a>
+         <a href="browse_threed.html">3D</a>
+         <a href="about.html">About</a>
+      </nav>
+
+      <div id="project_content">
+         <div class="project_grid">
+            <div class="sidebar"></div>
+
+            <div class="project_info">
+               <div class="project_gallery">
+                  <img
+                     src="images/nono/nonodaily sc (4).png"
+                     alt="A solved Nonogram puzzle of a viking ship."
+                  />
+               </div>
+
+               <div class="project_description">
+                  <h2>NonoDaily</h2>
+
+                  <p>
+                     NonoDaily is a daily logic puzzle website where the player
+                     uses clues in a numbered grid to reveal hidden pixel art
+                     images. These puzzles are called 'Nonograms', also known as
+                     'Picross'. This was a solo project created entirely by me.
+                  </p>
+
+                  <div class="project_credits">
+                     <p>
+                        Development Time: 7 weeks (January 16th, 2026 - March
+                        9th, 2026)
+                     </p>
+                     <a href="https://www.nonodaily.com/" class="button"
+                        >Play on NonoDaily.com</a
+                     >
+                     <hr />
+                     <p>
+                        Roles Held: Game Designer, UI/UX Designer, Programmer
+                     </p>
+                  </div>
+
+                  <h3>Interaction Design</h3>
+                  <p>
+                     Since Nonograms are an established type of puzzle, akin to
+                     Sudoku or Crosswords, my design focus was primarily on
+                     interface and usability. I put a lot of consideration into
+                     how interacting with the core mechanics such as drawing and
+                     erasing felt. I encourage you to open the website and try
+                     messing around with the various systems. There are too many
+                     game feel flourishes for me to list here! I also tried to
+                     include as many quality-of-life features as I could.
+                  </p>
+
+                  <p>
+                     The challenge with introducing quality-of-life features is
+                     that you don't want to remove the core challenge from the
+                     game. The key is to differentiate between tedious tasks and
+                     thoughtful tasks. For example, I observed players would
+                     fulfill the requirements for a line, but not X-away the
+                     empty tiles. This was the perfect opportunity to add an
+                     'auto-X' feature, where those empty tiles are automatically
+                     X-ed. For experienced players, this removes a minor
+                     inconvenience. Meanwhile, for new players, it helps them get
+                     over a common pitfall and better understand the logical
+                     process of the puzzle.
+                  </p>
+
+                  <h3>Structure and User Flow</h3>
+                  <p>
+                     The difficulty of the puzzles changes throughout the week.
+                     This is to encourage players of all skill levels to play.
+                     Sunday and Monday are easiest, Tuesday, Wednesday, and
+                     Thursday are medium, and Friday and Saturday are the
+                     hardest.
+                  </p>
+                  <p>
+                     Being a daily game is a great way to encourage user
+                     retention. The 'share' button is also helpful, as it
+                     encourages people to compare high scores with their
+                     friends.
+                  </p>
+
+                  <div class="image-strip-figure">
+                     <div class="two-image-strip">
+                        <img
+                           src="images/nono/nonodaily sc (5).png"
+                           alt="An empty board."
+                        />
+                        <img
+                           src="images/nono/nonodaily sc (4).png"
+                           alt="The board with a completed drawing of a viking ship."
+                        />
+                        <img
+                           src="images/nono/nonodaily sc (3).png"
+                           alt="The win pop-up."
+                        />
+                        <img
+                           src="images/nono/nonodaily sc (2).png"
+                           alt="The puzzle archive."
+                        />
+                     </div>
+                     <p>
+                        The general flow of the game. The player is presented
+                        with an empty grid. Once solved, they are shown a win
+                        screen with their time and their record time. An
+                        animation plays if they've achieved a new record. On
+                        themed days, a caption is shown, such as wishing the
+                        user a happy St. Patrick's Day. They are then given a
+                        share link, which copies their score and a link to the
+                        website, akin to Wordle or Connections. Finally, they
+                        are directed towards the archive, where they can play
+                        previous days' puzzles.
+                     </p>
+                  </div>
+
+                  <h3>Graphic Design</h3>
+
+                  <p>
+                     I first made mock-ups of the game using Figma. It needed to
+                     consider how the layout would work on both desktop and
+                     mobile. I also wanted to go for a unique aesthetic. The
+                     site's design is actually based on Tamagotchi marketing
+                     materials from the early 2000s, as I found their playful
+                     design and use of characters to fit the vibes of a casual
+                     puzzle game.
+                  </p>
+
+                  <div class="image-strip-figure">
+                     <div class="two-image-strip">
+                        <img
+                           src="images/nono/figma wireframe.png"
+                           alt="Wireframe mockup."
+                        />
+                        <img
+                           src="images/nono/figma mockup.png"
+                           alt="Designed mockup."
+                        />
+                        <img
+                           src="images/nono/nonodaily sc (11).png"
+                           alt="Actual implementation."
+                        />
+                        <img
+                           src="images/nono/tamagotchi magazine.jpg"
+                           alt="Inspiration."
+                        />
+                     </div>
+                     <p>
+                        The wireframe, mockup, final implementation, and an
+                        example of the material that inspired my design.
+                     </p>
+                  </div>
+
+                  <div class="image-strip-figure">
+                     <div class="two-image-strip">
+                        <img
+                           src="images/nono/nonodaily sc (8).png"
+                           alt="The puzzle board on a phone's display."
+                        />
+                        <img
+                           src="images/nono/nonodaily sc (1).png"
+                           alt="The win screen on a phone's display."
+                        />
+                     </div>
+                     <p>
+                        The layout is adaptive to any aspect ratio or
+                        resolution. Here it is being played on a phone.
+                     </p>
+                  </div>
+
+                  <h3>Reflection</h3>
+                  <p>
+                     Overall I'm very happy with this project. It gave me the
+                     opportunity to stretch my graphic design and JavaScript
+                     skills. I'm also proud of the quick turnaround time, with
+                     the project taking only 7 weeks to complete in my free
+                     time.
+                  </p>
+                  <p>
+                     <a href="https://www.nonodaily.com/" class="button"
+                        >Play on NonoDaily.com</a
+                     >
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         Copyright Stephen Kerschbaumer 2025<br />
+         <div class="footer-nav">
+            <a href="https://frogsoft.itch.io/">Itch.io</a>
+            <a href="https://bsky.app/profile/frogsoft.bsky.social">Bluesky</a>
+            <a href="Stephen_Kerschbaumer_Game_Design_CV.pdf">CV</a>
+         </div>
+      </footer>
+   </body>
+</html>
